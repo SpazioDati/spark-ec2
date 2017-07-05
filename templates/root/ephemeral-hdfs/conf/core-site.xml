@@ -61,6 +61,11 @@
   </property>
 
   <property>
+    <name>fs.s3n.impl</name>
+    <value>org.apache.hadoop.fs.s3native.NativeS3FileSystem</value>
+  </property>
+
+  <property>
     <name>hadoop.security.group.mapping</name>
     <value>org.apache.hadoop.security.ShellBasedUnixGroupsMapping</value>
   </property>

@@ -16,6 +16,8 @@ pushd /root/spark-ec2 > /dev/null
 # Load the environment variables specific to this AMI
 source /root/.bash_profile
 
+echo 'export PATH=$PATH:/root/spark/bin' >> /root/.bash_profile
+
 # Load the cluster variables set by the deploy script
 source ec2-variables.sh
 
