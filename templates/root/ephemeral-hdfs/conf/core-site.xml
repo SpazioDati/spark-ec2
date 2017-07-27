@@ -61,8 +61,23 @@
   </property>
 
   <property>
+    <name>fs.s3a.access.key</name>
+    <value>{{aws_access_key_id}}</value>
+  </property>
+
+  <property>
+    <name>fs.s3a.secret.key</name>
+    <value>{{aws_secret_access_key}}</value>
+  </property>
+
+  <property>
     <name>fs.s3n.impl</name>
-    <value>org.apache.hadoop.fs.s3native.NativeS3FileSystem</value>
+    <value>org.apache.hadoop.fs.s3a.S3AFileSystem</value>
+  </property>
+
+  <property>
+    <name>fs.s3.impl</name>
+    <value>org.apache.hadoop.fs.s3a.S3AFileSystem</value>
   </property>
 
   <property>
